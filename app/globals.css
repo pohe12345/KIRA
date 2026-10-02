@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0b0c;
+  --foreground: #cfcbc1;
+  --foreground-dim: rgba(207, 203, 193, 0.45);
+}
+
+@theme {
+  --font-serif: "Yu Mincho", "YuMincho", "Hiragino Mincho ProN",
+    "Hiragino Mincho Pro", "MS PMincho", "MS Mincho", "Noto Serif JP",
+    "Noto Serif CJK JP", "Source Han Serif JP", Georgia, "Times New Roman",
+    serif;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+html {
+  background-color: var(--background);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-serif);
+}
+
+/* Vignette — darkens the edges for a heavy, solemn atmosphere */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+/* Grain / noise overlay — subtle film grain, pure CSS, no assets */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Very subtle fade-in */
+@keyframes kira-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: kira-fade-in 1.4s ease-out both;
+}
+
+/* Mysterious seal / icon placeholder */
+.seal {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: clamp(9rem, 24vw, 12rem);
+  height: clamp(9rem, 24vw, 12rem);
+  border-radius: 50%;
+  border: 1px solid var(--foreground-dim);
+  background: radial-gradient(
+    circle at center,
+    rgba(207, 203, 193, 0.08) 0%,
+    rgba(207, 203, 193, 0.02) 45%,
+    rgba(0, 0, 0, 0) 72%
+  );
+  box-shadow:
+    0 0 0 6px rgba(207, 203, 193, 0.03),
+    0 0 70px rgba(0, 0, 0, 0.6),
+    inset 0 0 42px rgba(0, 0, 0, 0.6);
+}
+
+.seal__ring {
+  position: absolute;
+  inset: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(207, 203, 193, 0.28);
+}
+
+.seal__cross {
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.seal__cross::before,
+.seal__cross::after {
+  content: "";
+  position: absolute;
+  background: rgba(207, 203, 193, 0.72);
+}
+
+.seal__cross::before {
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: translateY(-50%);
+}
+
+.seal__cross::after {
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  transform: translateX(-50%);
+}
