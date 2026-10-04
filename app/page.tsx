@@ -7,7 +7,8 @@ export default function Home() {
       <img
         src="/kira.png"
         alt=""
-        className="absolute inset-0 h-full w-full object-cover object-center -translate-y-[7%]"
+        className="absolute inset-0 h-full w-full object-cover object-center -translate-y-[7%] max-md:object-contain max-md:object-center 
+          max-md:scale-[1.5] max-md:translate-y-[-3%]"
       />
       {/* 黑色半透明遮罩，让文字更容易阅读 */}
       <div className="absolute inset-0 bg-black/20" />
@@ -20,9 +21,11 @@ export default function Home() {
           <h1
             className="
               -translate-y-[30px]
+              max-md:-translate-y-[50px]
               mr-[-0.3em]
               font-serif
-              text-[3.5rem]
+              text-[2.5rem]
+              max-md:whitespace-nowrap
               
               tracking-[0.3em]
               font-black
@@ -42,6 +45,7 @@ export default function Home() {
             className="
               -translate-y-[30px]
               mt-6
+              max-md:mt-[80px]
               mr-[-0.3em]
               text-center
               font-['Klee_One','Hiragino_Kaku_Gothic_ProN','Yu_Gothic',sans-serif]
@@ -54,7 +58,7 @@ export default function Home() {
             "
           >
             {/* 正文 */}
-            <div className="text-xl leading-[1.2]  sm:text-2xl">
+            <div className="text-[1.0625rem] leading-[1.15] sm:text-2xl sm:leading-[1.2]">
               <div>世界の犯罪者が次々と</div>
               <div>消えているのは</div>
               <div>キラ様が復活なされたから</div>
@@ -63,7 +67,7 @@ export default function Home() {
             </div>
 
             {/* 下面两行稍微放大 */}
-            <div className="mt-8 text-[1.4rem] leading-[1.3] sm:text-[1.6rem]">
+            <div className="mt-6 text-[1.1875rem] leading-[1.25] sm:mt-8 sm:text-[1.6rem] sm:leading-[1.3]">
               <div>キラ様の復活を信じる者のみ</div>
               <div className="pl-[1em]">この入り口からお入りなさい</div>
             </div>
@@ -71,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* 底部按钮 */}
-        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4">
+        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4 max-md:translate-y-[-150px] max-md:translate-x-0">
           <EnterButton />
         </footer>
       </div>

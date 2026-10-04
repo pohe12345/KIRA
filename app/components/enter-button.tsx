@@ -21,6 +21,9 @@ export default function EnterButton() {
         transition-[filter]
         duration-200
         hover:brightness-110
+        max-md:h-7
+        max-md:w-[150px]
+        max-md:text-[1.0625rem]
       "
     >
       ENTER
