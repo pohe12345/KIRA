@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* 底部按钮 */}
-        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4 max-md:translate-y-[-150px] max-md:translate-x-0">
+        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4 max-md:translate-y-[-90px] max-md:translate-x-0">
           <EnterButton />
         </footer>
       </div>
