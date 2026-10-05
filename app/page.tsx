@@ -7,7 +7,7 @@ export default function Home() {
       <img
         src="/kira.png"
         alt=""
-        className="absolute inset-0 h-full w-full object-cover object-center -translate-y-[7%] max-md:object-contain max-md:object-center 
+        className="absolute inset-0 h-full w-full object-cover object-center kira-bg -translate-y-[7%] max-md:object-contain max-md:object-center 
           max-md:scale-[1.5] max-md:translate-y-[-3%]"
       />
       {/* 黑色半透明遮罩，让文字更容易阅读 */}
@@ -24,6 +24,7 @@ export default function Home() {
               max-md:-translate-y-[50px]
               mr-[-0.3em]
               font-serif
+              kira-title
               text-[2.5rem]
               max-md:whitespace-nowrap
               
@@ -58,7 +59,7 @@ export default function Home() {
             "
           >
             {/* 正文 */}
-            <div className="text-[1.0625rem] leading-[1.15] sm:text-2xl sm:leading-[1.2]">
+            <div className="kira-body text-[1.0625rem] leading-[1.15] sm:text-2xl sm:leading-[1.2]">
               <div>世界の犯罪者が次々と</div>
               <div>消えているのは</div>
               <div>キラ様が復活なされたから</div>
@@ -67,7 +68,7 @@ export default function Home() {
             </div>
 
             {/* 下面两行稍微放大 */}
-            <div className="mt-6 text-[1.1875rem] leading-[1.25] sm:mt-8 sm:text-[1.6rem] sm:leading-[1.3]">
+            <div className="kira-body-sub mt-6 text-[1.1875rem] leading-[1.25] sm:mt-8 sm:text-[1.6rem] sm:leading-[1.3]">
               <div>キラ様の復活を信じる者のみ</div>
               <div className="pl-[1em]">この入り口からお入りなさい</div>
             </div>

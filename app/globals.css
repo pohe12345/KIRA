@@ -126,3 +126,26 @@ body::after {
   height: 100%;
   transform: translateX(-50%);
 }
+
+/* ============================================================
+   Android 专属样式（仅 Android 手机生效，不影响 iPhone / 桌面端）
+   layout.tsx 检测 UA 给 <html> 加 .android class，
+   再配合 max-width 限制为手机尺寸，修复 Android 上文字过大、背景过度放大
+   ============================================================ */
+@media (max-width: 767px) {
+  html.android .kira-bg {
+    scale: 1.2;
+  }
+
+  html.android .kira-title {
+    font-size: 1.8rem;
+  }
+
+  html.android .kira-body {
+    font-size: 0.9rem;
+  }
+
+  html.android .kira-body-sub {
+    font-size: 1rem;
+  }
+}
