@@ -2,7 +2,7 @@ import EnterButton from "./components/enter-button";
 
 export default function Home() {
   return (
-    <main className="relative min-h-dvh overflow-hidden bg-black text-foreground">
+    <main className="relative min-h-dvh overflow-hidden bg-black text-foreground [-webkit-text-size-adjust:100%] [text-size-adjust:100%]">
       {/* 背景图片 */}
       <img
         src="/kira.png"
@@ -75,7 +75,7 @@ export default function Home() {
         </div>
 
         {/* 底部按钮 */}
-        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4 max-md:translate-y-[-90px] max-md:translate-x-0">
+        <footer className="relative z-10 flex justify-center pb-18 -translate-y-25 translate-x-4 max-md:translate-y-[-85px] max-md:translate-x-0">
           <EnterButton />
         </footer>
       </div>
