@@ -141,6 +141,7 @@ body::after {
     font-size: 2.2rem;
     font-weight: 900;
     font-family: "Noto Serif CJK JP", "Noto Serif JP", serif;
+    -webkit-text-stroke: 0.25px black;
     translate: 0 -15px;
   }
 
@@ -164,5 +165,10 @@ body::after {
   /* Android ENTER 按钮整体上移约 25px（-15px → -40px） */
   html.android .kira-footer {
     translate: 0 -40px;
+  }
+
+  /* iPhone/iPad 移动端 ENTER 按钮下移约 15px（-85px → -70px，仅非 Android 移动端） */
+  html:not(.android) .kira-footer {
+    translate: 0 -70px;
   }
 }
