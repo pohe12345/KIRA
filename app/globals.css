@@ -138,7 +138,10 @@ body::after {
   }
 
   html.android .kira-title {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: "Noto Serif CJK JP", "Noto Serif JP", serif;
+    translate: 0 -15px;
   }
 
   html.android .kira-body {
@@ -158,7 +161,8 @@ body::after {
   }
 
   /* Android ENTER 按钮整体下移约 70px（当前 -85px → -15px） */
+  /* Android ENTER 按钮整体上移约 25px（-15px → -40px） */
   html.android .kira-footer {
-    translate: 0 -15px;
+    translate: 0 -40px;
   }
 }
