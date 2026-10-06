@@ -140,8 +140,8 @@ body::after {
   html.android .kira-title {
     font-size: 2.2rem;
     font-weight: 900;
-    font-family: "Noto Serif CJK JP", "Noto Serif JP", serif;
-    -webkit-text-stroke: 0.25px black;
+    font-family: "Noto Serif JP", "Noto Serif CJK JP", "Source Han Serif JP", serif;
+    -webkit-text-stroke: 0.1px black;
     translate: 0 -15px;
   }
 
