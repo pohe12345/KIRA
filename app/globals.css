@@ -159,7 +159,7 @@ body::after {
   html.android .kira-body-sub {
     font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
     font-weight: 700;
-    -webkit-text-stroke: 0.35px black;
+    -webkit-text-stroke: 0.25px black;
     text-shadow: none;
   }
 
