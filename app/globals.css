@@ -160,7 +160,7 @@ body::after {
     font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
     font-weight: 900;
     -webkit-text-stroke: 0.25px black;
-    text-shadow: 0 0 1px white;
+    text-shadow: 0 0 0.5px white;
   }
 
   /* Android ENTER 按钮整体下移约 70px（当前 -85px → -15px） */
