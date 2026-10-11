@@ -134,7 +134,7 @@ body::after {
    ============================================================ */
 @media (max-width: 767px) {
   html.android .kira-bg {
-    scale: 1.2;
+    scale: 1.7;
   }
 
   html.android .kira-title {
