@@ -154,11 +154,13 @@ body::after {
   }
 
   /* Android 日文字体：改用 Noto Sans JP 作为主要 fallback，
-     不再依赖 Klee One / Hiragino / Yu Gothic；字重提高到 700 */
+     字重 700，取消黑色描边和阴影，依靠字体本身粗细形成白色笔画 */
   html.android .kira-body,
   html.android .kira-body-sub {
     font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
     font-weight: 700;
+    -webkit-text-stroke: 0;
+    text-shadow: none;
   }
 
   /* Android ENTER 按钮整体下移约 70px（当前 -85px → -15px） */
