@@ -153,14 +153,14 @@ body::after {
     font-size: 1rem;
   }
 
-  /* Android 日文字体：改用 Noto Sans JP 作为主要 fallback，
-     字重 700，取消黑色描边和阴影，依靠字体本身粗细形成白色笔画 */
+  /* Android 日文字体：Noto Sans JP，字重 900 让白色主体更厚，
+     0.25px 黑边 + 极轻微白色阴影使白色笔画向外扩展一点 */
   html.android .kira-body,
   html.android .kira-body-sub {
     font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
     -webkit-text-stroke: 0.25px black;
-    text-shadow: none;
+    text-shadow: 0 0 0.5px white;
   }
 
   /* Android ENTER 按钮整体下移约 70px（当前 -85px → -15px） */
