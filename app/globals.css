@@ -134,7 +134,7 @@ body::after {
    ============================================================ */
 @media (max-width: 767px) {
   html.android .kira-bg {
-    scale: 1.65;
+    scale: 1.58;
   }
 
   html.android .kira-title {
@@ -154,12 +154,11 @@ body::after {
   }
 
   /* Android 日文字体：改用 Noto Sans JP 作为主要 fallback，
-     不再依赖 Klee One / Hiragino / Yu Gothic；字重提高到 600，并减弱描边 */
+     不再依赖 Klee One / Hiragino / Yu Gothic；字重提高到 700 */
   html.android .kira-body,
   html.android .kira-body-sub {
     font-family: "Noto Sans JP", "Noto Sans CJK JP", sans-serif;
-    font-weight: 600;
-    -webkit-text-stroke: 0.2px black;
+    font-weight: 700;
   }
 
   /* Android ENTER 按钮整体下移约 70px（当前 -85px → -15px） */
