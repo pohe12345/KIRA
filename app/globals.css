@@ -146,11 +146,11 @@ body::after {
   }
 
   html.android .kira-body {
-    font-size: 0.9rem;
+    font-size: 1.125rem;
   }
 
   html.android .kira-body-sub {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
 
   /* Android 日文字体：Noto Sans JP，字重 900 让白色主体更厚，
